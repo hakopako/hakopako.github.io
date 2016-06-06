@@ -133,17 +133,24 @@
 </script>
 </center>
 
-    <hr>
-
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 blog">
 
 
             </div>
+
         </div>
     </div>
+
+    <center>
+    <br><Br><Br><Br>
+    ＊　　＊　　＊<Br><br><Br>
+    <a href="http://blog.hakopako.net/">さらに記事を読む>></a>
+    </center>
+
     <hr>
+
 
     <!-- Footer -->
     <footer>
@@ -166,8 +173,25 @@
 <script src="js/clean-blog.min.js"></script>
 <script>
 $(document).ready(function(){
-    $.get( "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://blog.hakopako.net/rss", function( data ) {
-        $( ".blog" ).html( data );
+    $.ajax({
+        url: "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://blog.hakopako.net/rss",
+        type: 'GET',
+        crossDomain: true,
+        dataType: 'jsonp',
+        success: function(data) { 
+
+            html = ""
+            $.each(data.responseData.feed.entries, function(i, entry) {
+                html += "<hr>"
+                html += "<h1>"+entry.title+"</h1>";
+                html += entry.publishedDate+"<br>"
+                if(entry.categories.length > 0){
+                    html += "["+entry.categories.join(",") + "]<br>";
+                }
+                html += entry.content;
+            });
+            $( ".blog" ).html( html );
+        }
     });
 });
 </script>
