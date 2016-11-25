@@ -1,5 +1,6 @@
 body {
     color: #333;
+    font-family: "Times New Roman", Times, serif;
 }
 
 h2 {
@@ -9,8 +10,20 @@ h2 {
 }
 
 .header {
-    background:#efefef;
+    background-image: url("img/apple-1842297_1920.jpg");
+    background-size: 100% auto;
+    height: 370px;
     margin-bottom:40px;
+    margin-top: -40px;
+    padding-top: 180px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 41px;
+    color: #fff;
+}
+
+.header > p {
+    background-color: rgba( 0, 0, 0, 0.3 );
 }
 
 .contact {
@@ -29,4 +42,11 @@ h2 {
     width: 64px;
     display: inline-block;
     margin: 12px;
+}
+
+.photo {
+    background-image: url("img/4510192.jpg");
+    background-size: 100% auto;
+    color: rgba( 0, 0, 0, 0 );
+    font-size: 24px;
 }
