@@ -5,124 +5,126 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
     <meta name="author" content="">
     <title>hakopako</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="./hakopako.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $('[data-toggle="popover"]').bind("click", function(){return false;})
-        $('[data-toggle="popover"]').popover(); 
-    });
-    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="hakopako.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/9835aafab5.js"></script>
+    <script src="hakopako.js"></script>
+
   </head>
 
   <body>
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default">
-      <div class="container">
-          <ul class="nav navbar-nav">
-            <li><a href="./">hakopako.net</a></li>
-            <li class="active"><a href="./resume-aya-shimada-pub.pdf">resume</a></li>
-          </ul>
+    <nav>
+      <div class="nav-wrapper white">
+        <ul id="nav-mobile" class="left">
+          <li><a href="/" class="grey-text light"><b>hakopako.net</b></a></li>
+          <li><a href="resume-aya-shimada-pub.pdf" class="grey-text light">Resume</a></li>
+        </ul>
       </div>
     </nav>
 
-    <div class="div header">
-        <p>Welcome</p>
-    </div> 
+    <section>
+      <div class="row center" id="header">
+        <img src="./img/4510192.jpg" class="circle responsive-im" width="70"/>
+        <p>* Aya Shimada *</p>
+        <p>Backend / Full-stack Engineer</p>
+        <p>Japanese / English</p>
+        <p>PHP / Python / Linux</p>
+        <div class="col s12 m 12 l12 center">
+          <a href="https://github.com/hakopako"><i class="small fa fa-github"></i></a>
+          <a href="https://twitter.com/shiiiman_"><i class="small fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/aya-shimada-98a71b94"><i class="small fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
 
-    <div class="container">
-    <h2>Personal Projects</h2>
+    <section>
+      <div class="row center">
+        <div class="col s12 offset-m1 m10 offset-l1 l10">
+          <div class="divider"></div>
+          <p class="section-title">Personal Projects</p>
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/periodcycle-top.png">
+              </div>
+              <div class="card-content">
+                <p>PeriodCycle</p>
+                <a href="https://www.periodcycle.net/" target="_blank">https://www.periodcycle.net</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/PKPicker.png">
+              </div>
+              <div class="card-content">
+                <p>PKPicker</p>
+                <a href="/PKPicker/" target="_blank">http://www.hakopako.net/PKPicker/</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/gistab.png">
+              </div>
+              <div class="card-content">
+                <p>gistab</p>
+                <a href="https://chrome.google.com/webstore/detail/gistab/bhfepdjffjgcpadgblccnmmainmmofkb" target="_blank">gistab chrome extension</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/shigoto-no-owari.png">
+              </div>
+              <div class="card-content">
+                <p>shigoto-no-owari</p>
+                <a href="./shigoto-no-owari/" target="_blank">shigoto-no-owari</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row center">
+        <div class="col s12 offset-m1 m10 offset-l1 l10">
+          <div class="divider"></div>
+          <p class="section-title">Blog</p>
+          <div id="bloglist"></div>
+          <p><a href="http://www.hakopako.net/" target="_blank"><< more >></a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer blue-grey lighten-5">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-3">
-            <a href="http://www.hakopako.net/" target="_blank">
-            <div class="thumbnail">
-              <img src="./img/blog-jpn.png" alt="...">
-              <div class="caption">
-                <h4>Blog - Japanese</h4>
-                <!-- <p>Software Development stuff written in Japanese.</p> -->
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a href="./PKNotification/" target="_blank">
-            <div class="thumbnail">
-              <img src="./img/PKNotification.png" alt="...">
-              <div class="caption">
-                <h4>PKNotification</h4>
-                <!-- <p>Simple and customizable notifications(Alert, ActionSheet, Toast) in Swift.</p> -->
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a href="https://github.com/hakopako/PKPicker" target="_blank">
-            <div class="thumbnail">
-              <img src="./img/PKPicker.png" alt="...">
-              <div class="caption">
-                <h4>PKPicker</h4>
-                <!-- <p>Modal picker library (list,drum,clock:android-style) written in swift</p> -->
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a href="https://chrome.google.com/webstore/detail/gistab/bhfepdjffjgcpadgblccnmmainmmofkb" target="_blank">
-            <div class="thumbnail">
-              <img src="./img/gistab.png" alt="...">
-              <div class="caption">
-                <h4>gistab</h4>
-                <!-- <p>Toggle the list style to the tab style for gist pages.</p> -->
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a href="./shigoto-no-owari/" target="_blank">
-            <div class="thumbnail">
-              <img src="./img/shigoto-no-owari.png" alt="...">
-              <div class="caption">
-                <h4>shigoto-no-owari</h4>
-                <!-- <p>...</p> -->
-              </div>
-            </div>
-            </a>
+          <div class="col s12 m 12 l12 center">
+            <a href="https://github.com/hakopako" class="btn-floating btn-large waves-effect waves-light blue-grey lighten-4 z-depth-0"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/shiiiman_" class="btn-floating btn-large waves-effect waves-light blue-grey lighten-4 z-depth-0"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/aya-shimada-98a71b94" class="btn-floating btn-large waves-effect waves-light blue-grey lighten-4 z-depth-0"><i class="fa fa-linkedin"></i></a>
           </div>
         </div>
-    </div><!-- container -->
-
-    <div class="contact">
-        <h2>Contacts</h2>
-        <div class="container">
-            <a href="#" data-toggle="popover" data-placement="top" title="E-mail" data-content="hakohakohako.0518@gmail.com">
-            <div class="circle">
-                <i class="fa fa-envelope-o" style="font-size:36px;color:white"></i>
-            </div></a>
-            <a href="https://github.com/hakopako">
-            <div class="circle">
-                <i class="fa fa-github" style="font-size:36px;color:white"></i>
-            </div></a>
-            <div class="circle photo">
-            　
-            </div>
-            <a href="https://twitter.com/shiiiman_">
-            <div class="circle">
-                <i class="fa fa-twitter" style="font-size:36px;color:white"></i>
-            </div></a>
-            <a href="https://www.linkedin.com/in/aya-shimada-98a71b94">
-            <div class="circle">
-                <i class="fa fa-linkedin" style="font-size:36px;color:white"></i>
-            </div></a>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center">
+        © 2017 Copyright hakopako.
         </div>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
-
