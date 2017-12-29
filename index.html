@@ -8,123 +8,96 @@
     <meta name="author" content="">
     <title>hakopako</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="hakopako.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://use.fontawesome.com/9835aafab5.js"></script>
-    <script src="hakopako.js"></script>
-
   </head>
 
   <body>
-
-    <nav>
-      <div class="nav-wrapper white">
-        <ul id="nav-mobile" class="left">
-          <li><a href="/" class="grey-text light"><b>hakopako.net</b></a></li>
-          <li><a href="resume-aya-shimada-pub.pdf" class="grey-text light">Resume</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">hakopako.net</a>
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="resume-aya-shimada-pub.pdf">Resume</a>
       </div>
     </nav>
 
-    <section>
-      <div class="row center" id="header">
-        <img src="./img/4510192.jpg" class="circle responsive-im" width="70"/>
-        <p>* Aya Shimada *</p>
-        <p>Backend / Full-stack Engineer</p>
-        <p>Japanese / English</p>
-        <p>PHP / Python / Linux</p>
-        <div class="col s12 m 12 l12 center">
-          <a href="https://github.com/hakopako"><i class="small fa fa-github"></i></a>
-          <a href="https://twitter.com/shiiiman_"><i class="small fa fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/aya-shimada-98a71b94"><i class="small fa fa-linkedin"></i></a>
+    <div class="container">
+      <div class="row text-center" id="header">
+        <div class="col-12 center">
+          <p><img src="./img/4510192.jpg" class="rounded-circle" width="70"/></p>
+          <p>Aya Shimada</p>
+          <p>Backend Engineer</p>
+          <p>Japanese / English</p>
+          <p>PHP / Python / Linux</p>
+        </div>
+        <div class="col-12 text-center sns">
+          <a href="https://github.com/hakopako"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/shiiiman_"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/hakohakohako05/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ayaka-shimada-98a71b94"><i class="fa fa-linkedin"></i></a>
         </div>
       </div>
-    </section>
 
-    <section>
-      <div class="row center">
-        <div class="col s12 offset-m1 m10 offset-l1 l10">
-          <div class="divider"></div>
-          <p class="section-title">Personal Projects</p>
-          <div class="col s12 m6 l3">
-            <div class="card">
-              <div class="card-image">
-                <img src="./img/periodcycle-top.png">
-              </div>
-              <div class="card-content">
-                <p>PeriodCycle</p>
-                <a href="https://www.periodcycle.net/" target="_blank">https://www.periodcycle.net</a>
-              </div>
+      <h2>Personal Projects</h2>
+      <hr>
+      <div class="row text-center">
+        <div class="card-deck">
+          <div class="card">
+            <img src="./img/openapi-cli-tool.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">openapi-cli-tool</h5>
+              <p class="card-text"></p>
+              <p class="card-text"><small class="text-muted"><a href="https://github.com/hakopako/openapi-cli-tool" target="_blank">https://github.com/hakopako/openapi-cli-tool</a></small></p>
             </div>
           </div>
-
-          <div class="col s12 m6 l3">
-            <div class="card">
-              <div class="card-image">
-                <img src="./img/PKPicker.png">
-              </div>
-              <div class="card-content">
-                <p>PKPicker</p>
-                <a href="/PKPicker/" target="_blank">http://www.hakopako.net/PKPicker/</a>
-              </div>
+          <div class="card">
+            <img src="./img/PKPicker.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">PKPicker</h5>
+              <p class="card-text"><small class="text-muted"><a href="https://github.com/hakopako/PKPicker" target="_blank">https://github.com/hakopako/PKPicker</a></small></p>
             </div>
           </div>
-
-          <div class="col s12 m6 l3">
-            <div class="card">
-              <div class="card-image">
-                <img src="./img/gistab.png">
-              </div>
-              <div class="card-content">
-                <p>gistab</p>
-                <a href="https://chrome.google.com/webstore/detail/gistab/bhfepdjffjgcpadgblccnmmainmmofkb" target="_blank">gistab chrome extension</a>
-              </div>
+          <div class="card">
+            <img src="./img/gistab.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">gistab</h5>
+              <p class="card-text"><small class="text-muted"><a href="https://chrome.google.com/webstore/detail/gistab/bhfepdjffjgcpadgblccnmmainmmofkb" target="_blank">gistab chrome extension</a></small></p>
             </div>
           </div>
-
-          <div class="col s12 m6 l3">
-            <div class="card">
-              <div class="card-image">
-                <img src="./img/shigoto-no-owari.png">
-              </div>
-              <div class="card-content">
-                <p>shigoto-no-owari</p>
-                <a href="./shigoto-no-owari/" target="_blank">shigoto-no-owari</a>
-              </div>
+          <div class="card">
+            <img src="./img/shigoto-no-owari.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">shigoto-no-owari</h5>
+              <p class="card-text"><small class="text-muted"><a href="./shigoto-no-owari/" target="_blank">DEMO</a></small></p>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section>
-      <div class="row center">
-        <div class="col s12 offset-m1 m10 offset-l1 l10">
-          <div class="divider"></div>
-          <p class="section-title">Blog</p>
-          <div id="bloglist"></div>
-          <p><a href="http://www.hakopako.net/" target="_blank"><< more >></a></p>
+      <h2>SNS</h2>
+      <hr>
+      <div class="row text-center">
+        <div class="col">
+          <div class="github-card" data-github="hakopako" data-width="400" data-height="317" data-theme="medium"></div>
+          <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+        </div>
+        <div class="col">
+          <a class="twitter-timeline" data-lang="en" data-width="400" data-height="317" data-theme="light" data-link-color="#9266CC" href="https://twitter.com/shiiiman_?ref_src=twsrc%5Etfw">Tweets by shiiiman_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
-    </section>
+    </div>
 
-    <footer class="page-footer blue-grey lighten-5">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m 12 l12 center">
-            <a href="https://github.com/hakopako" class="btn-floating btn-large waves-effect waves-light blue-grey lighten-4 z-depth-0"><i class="fa fa-github"></i></a>
-            <a href="https://twitter.com/shiiiman_" class="btn-floating btn-large waves-effect waves-light blue-grey lighten-4 z-depth-0"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/aya-shimada-98a71b94" class="btn-floating btn-large waves-effect waves-light blue-grey lighten-4 z-depth-0"><i class="fa fa-linkedin"></i></a>
-          </div>
-        </div>
+    <div class="row text-center">
+      <div class="col-12 text-center footer-light sns">
+        <a href="https://github.com/hakopako"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/shiiiman_"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/hakohakohako05/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ayaka-shimada-98a71b94"><i class="fa fa-linkedin"></i></a>
       </div>
-      <div class="footer-copyright">
-        <div class="container center">
-        © 2017 Copyright hakopako.
-        </div>
+      <div class="col-12 text-center footer-dark">
+        © 2019 Copyright hakopako.
       </div>
-    </footer>
+    </div>
   </body>
 </html>

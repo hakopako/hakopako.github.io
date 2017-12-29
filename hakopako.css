@@ -1,9 +1,23 @@
-body {
+* {
+    font-weight: 200;
     font-weight: 200;
 }
 
 a {
-    color: #cddc39;
+    color: #827717;
+}
+
+a:hover {
+    color: #666666;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 32px;
+  color: #666666;
+  margin: 0px;
+  margin-top: 50px;
+  padding: 0px;
 }
 
 #header {
@@ -11,15 +25,22 @@ a {
     margin-bottom: 40px;
 }
 
-#header i {
-    margin: 8px;
+.footer-light {
+  margin-top: 100px;
+  padding: 12px;
+  background-color: #f8f9fa;
+}
+.footer-dark {
+  padding: 12px;
+  background-color: #e8e9ea;
+  font-size: 11px;
+  color: #666666;
 }
 
-#header a, #bloglist a {
-    color: #827717;
+.sns {
+  font-size: 30px;
 }
 
-.section-title {
-    font-size: 24pt;
+.sns i {
+  margin: 8px;
 }
-
