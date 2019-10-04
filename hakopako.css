@@ -3,12 +3,27 @@
     font-weight: 200;
 }
 
+body {
+  color: #666;
+}
+
 a {
     color: #827717;
 }
 
 a:hover {
     color: #666666;
+}
+
+span.tech {
+  background-color: #eee;
+  border-radius: 9px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 3px;
+  font-size: 14px;
 }
 
 h2 {
@@ -18,6 +33,10 @@ h2 {
   margin: 0px;
   margin-top: 50px;
   padding: 0px;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
 }
 
 #header {
